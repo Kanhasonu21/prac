@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink='/'>Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="getlist">See Data</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        See Deatils of
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+        <a class="dropdown-item" value='usa'>USA</a>
+        <a class="dropdown-item"value='india' >INDIA</a>
+        <a class="dropdown-item" value='spain'>Spain</a>
+        <a class="dropdown-item" value='germany'>Germany</a>
+        <a class="dropdown-item" value='mexico'>Mexico</a>
+        <a class="dropdown-item" value='china'>China</a>
+    </div>
+</div> -->
+
+<input type="checkbox" id="Animals" name="Animals" ng-model="ModelData.Animals" />
+<div class="form-group" ng-show="ModelData.Animals">
+    <label for="FirstName" class="col-md-9">
+        Are you interested in Animal Liability Coverage?
+    </label>
+    <div class="col-md-3">
+        <label>
+            <input type="radio" id="AnimalLiabCovY" name="AnimalLiabilityCoverageRadio"
+                ng-model="ModelData.AnimalLiabCov" value="Y" /> Yes
+            <input type="radio" id="AnimalLiabCovN" name="AnimalLiabilityCoverageRadio"
+                ng-model="ModelData.AnimalLiabCov" value="N" /> No
+        </label>
+    </div>
+</div>
